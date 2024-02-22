@@ -16,3 +16,4 @@ Currently this is Linux-only, but as RTMidi is cross-platform, it probably(?) co
 
 ## To Do:
 - Add an LED-locating helper function
+- Check error handling
