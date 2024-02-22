@@ -2,9 +2,12 @@
 
 MIDIScanner - A small utility to grab note/velocity/CC data from MIDI devices in real time. Originally designed to be used with Mixxx for controller mapping, but there are all sorts of practical applications!
 
-Currently this is Linux-only, but as RTMidi is cross-platform, it probably(?) compiles on other platforms. YMMV. 
+Currently this has been tested to work on Linux and macOS, 
 
 ![](screenshot.png)
+
+## Dependencies:
+- RTMidi ("brew install rtmidi" on macOS w/ homebrew installed, "sudo apt install librtmidi-dev" on Debian/Ubuntu, "sudo pacman -S rtmidi" on Arch, etc.)
 
 ## How to Build:
 - Open your Terminal application
