@@ -48,7 +48,7 @@ int main() {
     }
 
     char input;
-    std::cout << "Press 'q' to quit." << std::endl;
+    std::cout << "Press 'q' and enter to quit." << std::endl;
     std::cin >> input;
 
     return 0;
