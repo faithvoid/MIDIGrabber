@@ -2,7 +2,7 @@
 
 MIDIScanner - A small utility to grab note/velocity/CC data from MIDI devices in real time. Originally designed to be used with Mixxx for controller mapping, but there are all sorts of practical applications!
 
-Currently this has been tested to work on Linux and macOS, 
+Currently this has been tested to work on Linux and macOS, but it SHOULD work on Windows as it supports RTMidi (building for Windows is currently unsupported).
 
 ![](screenshot.png)
 
@@ -17,10 +17,14 @@ Currently this has been tested to work on Linux and macOS,
 ## How to Build:
 ### Linux:
 - Install RTMidi dependencies (librtmidi-dev on Ubuntu, rtmidi on Arch Linux, etc.)
-- Go into the folder containing "midiscanner.cpp" and run this command in terminal, without quotes: "g++ -std=c++11 midiscanner.cpp -o midiscanner -lrtmidi"
+- Clone this repository
+- Open the repository folder in your Terminal and run "make" 
 
 ### macOS:
-- TBA
+- Install Homebrew
+- Install RTMidi dependencies (brew install rtmidi)
+- Clone this repository
+- Open the repository folder in your Terminal and run "make" 
 
 ### Windows:
 - TBA
