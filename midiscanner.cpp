@@ -1,6 +1,8 @@
 #include <iostream>
 #include <rtmidi/RtMidi.h>
 
+// This code welcomes the users and lists the available MIDI devices.
+
 void listMIDIDevices() {
     RtMidiIn midiin;
     unsigned int portCount = midiin.getPortCount();
@@ -13,6 +15,8 @@ void listMIDIDevices() {
     }
 }
 
+// This code reads the MIDI data back to the user in a nice, user friendly way, hiding the output data such as LEDs by default. You can probably add another "std::cout" line below with the outbound information, but I haven't tested this.
+
 void MIDIReadCallback(double timeStamp, std::vector<unsigned char> *message, void *userData) {
     int status = message->at(0) & 0xF0; // Mask out channel
     int channel = message->at(0) & 0x0F;
@@ -23,6 +27,8 @@ void MIDIReadCallback(double timeStamp, std::vector<unsigned char> *message, voi
         std::cout << "Channel: " << channel + 1 << ", Control Change (CC): " << static_cast<int>(message->at(1)) << ", Value: " << static_cast<int>(message->at(2)) << std::endl;
     }
 }
+
+// This is the main code, which reads the currently connected MIDI device data and allows the user to select which MIDI device they'd like to scan data from.
 
 int main() {
     listMIDIDevices();
