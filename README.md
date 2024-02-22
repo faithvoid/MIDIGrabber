@@ -14,6 +14,12 @@ Currently this is Linux-only, but as RTMidi is cross-platform, it probably(?) co
 - Install RTMidi dependencies (librtmidi-dev on Ubuntu, rtmidi on Arch Linux, etc.)
 - Go into the folder containing "midiscanner.cpp" and run this command in terminal, without quotes: "g++ -std=c++11 midiscanner.cpp -o midiscanner -lrtmidi"
 
+### macOS:
+- TBA
+
+### Windows:
+- TBA
+
 ## To Do:
 - Add an LED-locating helper function
 - Check error handling
