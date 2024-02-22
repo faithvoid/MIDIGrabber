@@ -4,6 +4,8 @@ MIDIScanner - A small utility to grab note/velocity/CC data from MIDI devices in
 
 Currently this is Linux-only, but as RTMidi is cross-platform, it probably(?) compiles on other platforms. YMMV. 
 
+![](screenshot.png)
+
 ## How to Build:
 - Open your Terminal application
 - Go to the directory where MIDIScanner is saved and type "./midiscanner" into the terminal (you may have to type "chmod +x midiscanner" first if you get permission issues).
