@@ -4,7 +4,7 @@
 void listMIDIDevices() {
     RtMidiIn midiin;
     unsigned int portCount = midiin.getPortCount();
-    std::cout << "- MIDIGrabber by faithvoid -" << std::endl;
+    std::cout << "- MIDIScanner by faithvoid -" << std::endl;
     std::cout << "- Grabs easy-to-parse MIDI data from your controller! -" << std::endl;
     std::cout << "Available MIDI devices:" << std::endl;
     for (unsigned int i = 0; i < portCount; ++i) {
