@@ -32,4 +32,4 @@ Currently this has been tested to work on Linux (tested with armv8 and x86/x86_6
 ## To Do:
 - Add an LED-locating helper function
 - Check error handling
-- Port to Python using python-rtmidi
+- Port to Python using python-rtmidi (negating then need for seperate binaries).
