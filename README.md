@@ -2,7 +2,7 @@
 
 MIDIScanner - A small utility to grab note/velocity/CC data from MIDI devices in real time. Originally designed to be used with Mixxx for controller mapping, but there are all sorts of practical applications!
 
-Currently this has been tested to work on Linux (tested with armv7 and x86/x86_64) and macOS, but it SHOULD work on Windows as it supports RTMidi (building for Windows is currently unsupported).
+Currently this has been tested to work on Linux (tested with armv8 and x86/x86_64) and macOS, but it SHOULD work on Windows as it supports RTMidi (building for Windows is currently unsupported).
 
 ![](screenshot.png)
 
